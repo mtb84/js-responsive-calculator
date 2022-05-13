@@ -1,13 +1,28 @@
 'use stict'
 
+const operatorButtons = document.querySelectorAll(`.operator`); 
+const numberButton = document.querySelectorAll(`.number`)
+const decimal = document.querySelector(`.decimal`)
+const equalSign = document.querySelector(`.equal-sign`);
+const percent = document.querySelector(`.percent`);
+const clear = document.querySelector(`.clear`);
+const calculatorKeys = document.querySelectorAll(`calculator-keys`);
+const calculatorScreen = document.querySelector(`.calculator-screen`)
 
-const numberButton = document.querySelectorAll(`.number`);
+const calculation = [];
 
+const pushNumber = function (event) {
+    return alert(event.target.value);
+}
 
-console.log(numberButton);
+numberButton.forEach;
+    function button() {
+    addEventListener(`click`, pushNumber)
+};
+button();
 
-for(let i = 0; i < numberButton.length; i++)
-numberButton[i].addEventListener('click', function() {
-console.log(`Button clicked`);
-
-});
+operatorButtons.forEach;
+    function button() {
+    addEventListener(`click`, pushNumber)
+};
+button();
