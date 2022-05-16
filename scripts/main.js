@@ -10,10 +10,34 @@ const calculatorKeys = document.querySelectorAll(`calculator-keys`);
 const calculatorScreen = document.querySelector(`.calculator-screen`)
 
 const calculation = [];
-
+const calculate = function (event) {
+    return alert(event.target.value);
+}
 const pushNumber = function (event) {
     return alert(event.target.value);
 }
+
+// math function 
+
+const operators = {
+    "+": function (num1, num2) {
+           return num1 + num2;
+         },
+    "-": function (num1, num2) {
+           return num1 - num2;
+         },
+    "*": function (num1, num2) {
+           return num1 * num2;
+         },
+    "/": function (num1, num2) {
+           return num1 / num2;
+         },
+    "%": function (num1, num2) {
+           return num1 % num2;
+         },
+  };
+
+
 
 numberButton.forEach;
     function button() {
